@@ -15,15 +15,15 @@
         }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
-        header { background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; padding: 4rem 2rem; text-align: center; }
-        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; letter-spacing: 1px; }
-        header p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 1rem; }
+        header { background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; padding: 3rem 2rem; text-align: center; }
         
-        .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 15px; }
-        .contact-links a { color: white; text-decoration: none; font-weight: 500; font-size: 0.9rem; background: rgba(255, 255, 255, 0.15); padding: 6px 12px; border-radius: 20px; transition: background 0.2s; }
-        .contact-links a:hover { background: rgba(255, 255, 255, 0.3); text-decoration: none; }
+        .profile-container { margin-bottom: 1.5rem; }
+        .profile-img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 4px solid rgba(255, 255, 255, 0.8); box-shadow: 0 4px 6px rgba(0,0,0,0.1); background-color: #cbd5e1; display: inline-block; }
         
-        .container { max-width: 900px; margin: -30px auto 40px auto; padding: 0 20px; }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.3rem; letter-spacing: 1px; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        
+        .container { max-width: 900px; margin: -20px auto 40px auto; padding: 0 20px; }
         section { background: var(--card-bg); border-radius: 12px; padding: 30px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03); }
         h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 12px; margin-bottom: 20px; font-size: 1.5rem; }
         
@@ -41,36 +41,32 @@
         
         .focus-badges span { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 6px 12px; border-radius: 20px; font-size: 0.9rem; margin: 4px; font-weight: 600; }
         
+        /* Sosyal Medya (Alt Kısım) */
+        .social-section { text-align: center; background: linear-gradient(135deg, #1e293b, #0f172a); color: white; }
+        .social-section h2 { color: white; border-left-color: var(--accent); display: inline-block; margin-bottom: 15px; }
+        .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 15px; }
+        .contact-links a { color: white; text-decoration: none; font-weight: 500; font-size: 0.9rem; background: rgba(255, 255, 255, 0.1); padding: 8px 16px; border-radius: 20px; transition: background 0.2s, transform 0.2s; border: 1px solid rgba(255,255,255,0.15); }
+        .contact-links a:hover { background: var(--accent); transform: translateY(-2px); text-decoration: none; }
+        
         footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>KUSAY TOSUN</h1>
-        <p>Elektrik-Elektronik Mühendisliği | 2. Sınıf</p>
-        <div class="contact-links">
-            <a href="mailto:kusaytosunse2024@gmail.com">E-posta</a>
-            <a href="https://linkedin.com/in/Kusay_Tosun" target="_blank">LinkedIn</a>
-            <a href="https://nsosyal.com/kuusaytosunn" target="_blank">nSosyal</a>
-            <a href="https://www.threads.net/@kusaytosunn" target="_blank">Threads</a>
-            <a href="https://x.com/kusaytosunn" target="_blank">X (Twitter)</a>
-            <a href="https://www.instagram.com/kusaytosunn?igsi=MTR3bmh3Nmcyd2wwYg==" target="_blank">Instagram</a>
+        <div class="profile-container">
+            <!-- Profil fotoğrafı yüklediğinizde ismini 'profil.jpg' yaparsanız otomatik görünecektir -->
+            <img src="profil.jpg" alt="Kusay Tosun" class="profile-img" onerror="this.style.display='none'">
         </div>
+        <h1>KUSAY TOSUN</h1>
+        <p>Elektrik-Elektronik Mühendisliği | 3. Sınıf</p>
     </header>
 
     <div class="container">
         <!-- Hakkımda -->
         <section>
             <h2>Hakkımda</h2>
-            <p>Gömülü sistemler, donanım tasarımı, havacılık elektroniği ve yapay zeka uygulamaları alanlarında çalışmalar yürüten, proje tabanlı deneyime sahip Elektrik-Elektronik Mühendisliği 2. sınıf öğrencisi. Gerçek dünya mühendislik problemlerine analitik çözümler üretme ve takım ortamında değer katma odaklı.</p>
-        </section>
-
-        <!-- Eğitim -->
-        <section>
-            <h2>Eğitim</h2>
-            <div class="project-title">Bartın Üniversitesi | Bartın, Türkiye</div>
-            <div class="project-sub">Elektrik-Elektronik Mühendisliği — Lisans (2024 – Günümüz | 2. Sınıf)</div>
+            <p>Gömülü sistemler, donanım tasarımı, havacılık elektroniği ve yapay zeka uygulamaları alanlarında çalışmalar yürüten, proje tabanlı deneyime sahip Elektrik-Elektronik Mühendisliği 3. sınıf öğrencisi. Gerçek dünya mühendislik problemlerine analitik çözümler üretme ve takım ortamında değer katma odaklı.</p>
         </section>
 
         <!-- Teknik Yetkinlikler -->
@@ -137,6 +133,19 @@
             <p style="margin-top: 15px; font-size: 0.95rem; color: #475569;">
                 <strong>Aktif Topluluklar:</strong> SİBERAS Kulübü, YZ & Veri Bilimi Kulübü, Havacılık & Uzay Kulübü, Teknofest Kulübü
             </p>
+        </section>
+
+        <!-- Sosyal Medya ve İletişim (Aşağıda) -->
+        <section class="social-section">
+            <h2>İletişim & Sosyal Medya</h2>
+            <div class="contact-links">
+                <a href="mailto:kusaytosunse2024@gmail.com">E-posta</a>
+                <a href="https://linkedin.com/in/Kusay_Tosun" target="_blank">LinkedIn</a>
+                <a href="https://nsosyal.com/kuusaytosunn" target="_blank">nSosyal</a>
+                <a href="https://www.threads.net/@kusaytosunn" target="_blank">Threads</a>
+                <a href="https://x.com/kusaytosunn" target="_blank">X (Twitter)</a>
+                <a href="https://www.instagram.com/kusaytosunn?igsi=MTR3bmh3Nmcyd2wwYg==" target="_blank">Instagram</a>
+            </div>
         </section>
     </div>
 
