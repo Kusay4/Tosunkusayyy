@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kusay Tosun | Elektrik-Elektronik Mühendisliği Portfolyo</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --accent: #3b82f6;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+        header { background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; padding: 3rem 2rem; text-align: center; }
+        
+        .profile-container { margin-bottom: 1.5rem; }
+        .profile-img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 4px solid rgba(255, 255, 255, 0.8); box-shadow: 0 4px 6px rgba(0,0,0,0.1); background-color: #cbd5e1; display: inline-block; }
+        
+        header h1 { font-size: 2.5rem; margin-bottom: 0.3rem; letter-spacing: 1px; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        
+        .container { max-width: 900px; margin: -20px auto 40px auto; padding: 0 20px; }
+        section { background: var(--card-bg); border-radius: 12px; padding: 30px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03); }
+        h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 12px; margin-bottom: 20px; font-size: 1.5rem; }
+        
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .skill-category { background: #f1f5f9; padding: 15px; border-radius: 8px; }
+        .skill-category h3 { font-size: 1rem; color: var(--primary); margin-bottom: 8px; }
+        .skill-tags span { display: inline-block; background: white; color: var(--accent); padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin: 2px; border: 1px solid var(--border); font-weight: 500; }
+        
+        .project-item { margin-bottom: 25px; border-bottom: 1px solid var(--border); padding-bottom: 20px; }
+        .project-item:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+        .project-title { font-size: 1.2rem; font-weight: bold; color: var(--primary); }
+        .project-sub { font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
+        ul { padding-left: 20px; margin-top: 8px; }
+        li { margin-bottom: 5px; color: #334155; font-size: 0.95rem; }
+        
+        .focus-badges span { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 6px 12px; border-radius: 20px; font-size: 0.9rem; margin: 4px; font-weight: 600; }
+        
+        /* Sosyal Medya (Alt Kısım) */
+        .social-section { text-align: center; background: linear-gradient(135deg, #1e293b, #0f172a); color: white; }
+        .social-section h2 { color: white; border-left-color: var(--accent); display: inline-block; margin-bottom: 15px; }
+        .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 15px; }
+        .contact-links a { color: white; text-decoration: none; font-weight: 500; font-size: 0.9rem; background: rgba(255, 255, 255, 0.1); padding: 8px 16px; border-radius: 20px; transition: background 0.2s, transform 0.2s; border: 1px solid rgba(255,255,255,0.15); }
+        .contact-links a:hover { background: var(--accent); transform: translateY(-2px); text-decoration: none; }
+        
+        footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="profile-container">
+            <!-- Profil fotoğrafı yüklediğinizde ismini 'profil.jpg' yaparsanız otomatik görünecektir -->
+            <img src="profil.jpg" alt="Kusay Tosun" class="profile-img" onerror="this.style.display='none'">
+        </div>
+        <h1>KUSAY TOSUN</h1>
+        <p>Elektrik-Elektronik Mühendisliği | 3. Sınıf</p>
+    </header>
+
+    <div class="container">
+        <!-- Hakkımda -->
+        <section>
+            <h2>Hakkımda</h2>
+            <p>Gömülü sistemler, donanım tasarımı, havacılık elektroniği ve yapay zeka uygulamaları alanlarında çalışmalar yürüten, proje tabanlı deneyime sahip Elektrik-Elektronik Mühendisliği 3. sınıf öğrencisi. Gerçek dünya mühendislik problemlerine analitik çözümler üretme ve takım ortamında değer katma odaklı.</p>
+        </section>
+
+        <!-- Teknik Yetkinlikler -->
+        <section>
+            <h2>Teknik Yetkinlikler</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programlama Dilleri</h3>
+                    <div class="skill-tags"><span>C++</span> <span>MATLAB</span> <span>Python</span></div>
+                </div>
+                <div class="skill-category">
+                    <h3>PCB & Devre Tasarımı</h3>
+                    <div class="skill-tags"><span>EasyEDA</span> <span>Proteus</span> <span>LTspice</span> <span>Tinkercad</span></div>
+                </div>
+                <div class="skill-category">
+                    <h3>Donanım & Mimari</h3>
+                    <div class="skill-tags"><span>Gömülü Sistemler</span> <span>Mikrodenetleyiciler</span> <span>Devre Analizi</span> <span>3D Tasarım</span></div>
+                </div>
+                <div class="skill-category">
+                    <h3>Mühendislik Araçları & Alanlar</h3>
+                    <div class="skill-tags"><span>Güç Analizi</span> <span>Sensör Entegrasyonu</span> <span>Sinyal İşleme</span> <span>Güç Elektroniği</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proje Deneyimleri -->
+        <section>
+            <h2>Proje Deneyimleri</h2>
+            
+            <div class="project-item">
+                <div class="project-title">EMİRŞAH Proje Takımı — Elektronik Sistemler Sorumlusu</div>
+                <div class="project-sub">Teknofest Havacılık, Uzay ve Teknoloji Festivali | Şubat 2025 - Devam Ediyor</div>
+                <ul>
+                    <li>Teknofest Çevre ve Enerji Teknolojileri kapsamında akıllı enerji yönetimi ve yenilenebilir enerji optimizasyonu projesinde yer aldı.</li>
+                    <li>Büyük veri ve makine öğrenmesi tabanlı tüketim tahmini modelinin kavramsal tasarım süreçlerini destekledi.</li>
+                    <li>Sistem güvenilirliği için devre şemalarının simülasyon testlerini ve donanımsal altyapı analizlerini koordine etti.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Yürüyen Işık Devresi — Akademik Donanım Projesi</div>
+                <div class="project-sub">Bireysel / Bartın Üniversitesi | 2025</div>
+                <ul>
+                    <li>Lojik devre prensiplerini ve mikrodenetleyici programlamayı birleştirerek sekansiyel ışık kontrol sistemi tasarladı.</li>
+                    <li>LTspice simülasyonlarıyla devre parametrelerini donanım basımı öncesinde optimize etti.</li>
+                    <li>Tinkercad ve Proteus ortamlarında sanal prototipleme ve doğrulamalar gerçekleştirdi.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Odak Alanları -->
+        <section>
+            <h2>Odak Alanları & Kulüpler</h2>
+            <div class="focus-badges">
+                <span>Gömülü Sistemler</span>
+                <span>Aviyonik Elektronik</span>
+                <span>YZ Donanımı</span>
+                <span>Savunma Sanayii</span>
+                <span>PCB Tasarımı</span>
+                <span>IoT</span>
+                <span>FPGA</span>
+                <span>Otonom Sistemler</span>
+            </div>
+            <p style="margin-top: 15px; font-size: 0.95rem; color: #475569;">
+                <strong>Aktif Topluluklar:</strong> SİBERAS Kulübü, YZ & Veri Bilimi Kulübü, Havacılık & Uzay Kulübü, Teknofest Kulübü
+            </p>
+        </section>
+
+        <!-- Sosyal Medya ve İletişim (Aşağıda) -->
+        <section class="social-section">
+            <h2>İletişim & Sosyal Medya</h2>
+            <div class="contact-links">
+                <a href="mailto:kusaytosunse2024@gmail.com">E-posta</a>
+                <a href="https://linkedin.com/in/Kusay_Tosun" target="_blank">LinkedIn</a>
+                <a href="https://nsosyal.com/kuusaytosunn" target="_blank">nSosyal</a>
+                <a href="https://www.threads.net/@kusaytosunn" target="_blank">Threads</a>
+                <a href="https://x.com/kusaytosunn" target="_blank">X (Twitter)</a>
+                <a href="https://www.instagram.com/kusaytosunn?igsi=MTR3bmh3Nmcyd2wwYg==" target="_blank">Instagram</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Kusay Tosun — Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
